@@ -1,19 +1,7 @@
-<%= form_for(routes) do |f| %>
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :address %>
-    <%= f.text_field :address %>
-  </div>
-  <div class="field">
-    <%= f.label :phone_number %>
-    <%= f.text_field :phone_number %>
-  </div>
-  <div class="field">
-    <%= f.label :category %>
-    <%= f.text_field :category %>
-  </div>
+<%= simple_form_for(routes) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category %>
   <%= f.submit %>
 <% end %>
