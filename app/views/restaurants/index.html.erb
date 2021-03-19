@@ -1,3 +1,7 @@
+<div class="container-fluid">
+  <%= link_to "New restaurant", new_restaurant_path %>
+</div>
+<br>
 <div class="container">
   <% @restaurants.each do |restaurant| %>
     <%= link_to restaurant_path(restaurant) do  %>
